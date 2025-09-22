@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — My Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">MyPortfolio</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact Me</h1>
+    <form id="contactForm" novalidate>
+      <label>Name
+        <input id="cname" type="text" placeholder="Your name" />
+      </label>
+      <label>Email
+        <input id="cemail" type="email" placeholder="your@email" />
+      </label>
+      <label>Message
+        <textarea id="cmessage" rows="5" placeholder="Write a short message"></textarea>
+      </label>
+      <button type="submit" class="btn">Send</button>
+      <p id="contactFeedback" class="feedback" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year4"></span> MyPortfolio</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

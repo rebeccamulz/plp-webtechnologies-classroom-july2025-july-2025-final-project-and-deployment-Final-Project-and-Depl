@@ -1,0 +1,47 @@
+/* Basic reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root{
+  --bg: #ffffff; --text: #222; --accent: #3498db; --muted:#666;
+}
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+.container{ max-width: 960px; margin: 0 auto; padding: 20px; }
+
+/* Header */
+.site-header { border-bottom: 1px solid #eee; }
+.site-header .container { display:flex; align-items:center; justify-content:space-between; }
+.logo { font-weight:700; text-decoration:none; color:var(--text); }
+.nav a { margin-left: 16px; text-decoration:none; color:var(--muted); }
+.nav { display:flex; align-items:center; }
+
+/* Buttons */
+.btn {
+  display:inline-block; padding:10px 14px; background:var(--accent); color:white; border:none; border-radius:6px;
+  text-decoration:none; cursor:pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+.btn:hover{ transform: translateY(-3px); }
+
+/* Hero */
+.hero { padding: 40px 0; }
+.hero h1 { font-size:2rem; margin-bottom:8px; }
+
+/* Grid */
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:16px; }
+.project-card{ padding:16px; border:1px solid #eee; border-radius:8px; background:#fbfbfb; }
+
+/* Animations */
+.animate-btn { transition: transform 0.25s ease; }
+.animate-btn:active { transform: scale(0.96); }
+
+/* Footer */
+.site-footer { border-top:1px solid #eee; margin-top:40px; padding:20px 0; text-align:center; color:var(--muted); }
+
+/* Dark theme (toggle) */
+body.dark {
+  --bg: #111827; --text:#e5e7eb; --accent:#10b981; --muted:#9ca3af;
+}
